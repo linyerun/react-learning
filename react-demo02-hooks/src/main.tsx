@@ -6,7 +6,8 @@ import "./index.css";
 // import AppImmer from "@/AppImmer.tsx";
 // import AppMyHooks from "@/AppMyHooks.tsx";
 // import AppUseTransition from "@/AppUseTransition.tsx";
-import AppUseDeferredValue from "@/AppUseDeferredValue.tsx";
+// import AppUseDeferredValue from "@/AppUseDeferredValue.tsx";
+import AppUseEffect from "@/AppUseEffect.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppImmer />*/}
     {/*<AppMyHooks />*/}
     {/*<AppUseTransition />*/}
-    <AppUseDeferredValue />
+    {/*<AppUseDeferredValue />*/}
+    <AppUseEffect />
   </StrictMode>,
 );
