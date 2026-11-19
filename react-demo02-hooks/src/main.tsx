@@ -4,13 +4,15 @@ import "./index.css";
 // import AppUseState from "./AppUseState.tsx";
 // import AppUseReducer from "@/AppUseReducer.tsx";
 // import AppImmer from "@/AppImmer.tsx";
-import { AppMyHooks } from "@/AppMyHooks.tsx";
+// import AppMyHooks from "@/AppMyHooks.tsx";
+import AppUseTransition from "@/AppUseTransition.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     {/*<AppUseState />*/}
     {/*<AppUseReducer />*/}
     {/*<AppImmer />*/}
-    <AppMyHooks />
+    {/*<AppMyHooks />*/}
+    <AppUseTransition />
   </StrictMode>,
 );
