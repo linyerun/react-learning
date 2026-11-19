@@ -8,7 +8,8 @@ import "./index.css";
 // import AppUseTransition from "@/AppUseTransition.tsx";
 // import AppUseDeferredValue from "@/AppUseDeferredValue.tsx";
 // import AppUseEffect from "@/AppUseEffect.tsx";
-import AppUseLayoutEffect from "@/AppUseLayoutEffect.tsx";
+// import AppUseLayoutEffect from "@/AppUseLayoutEffect.tsx";
+import AppUseRef from "@/AppUseRef.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppUseTransition />*/}
     {/*<AppUseDeferredValue />*/}
     {/*<AppUseEffect />*/}
-    <AppUseLayoutEffect />
+    {/*<AppUseLayoutEffect />*/}
+    <AppUseRef />
   </StrictMode>,
 );
