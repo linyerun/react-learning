@@ -1,7 +1,7 @@
 import { useStorage } from "@/hooks/useStorage.ts";
 import { useHistory } from "@/hooks/useHistory.ts";
 
-export const AppMyHooks = () => {
+const AppMyHooks = () => {
   const [cnt, setCnt] = useStorage("myCnt", 1);
   const [url, push, replace] = useHistory();
   return (
@@ -15,3 +15,5 @@ export const AppMyHooks = () => {
     </>
   );
 };
+
+export default AppMyHooks;
