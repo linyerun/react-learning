@@ -7,7 +7,8 @@ import "./index.css";
 // import AppMyHooks from "@/AppMyHooks.tsx";
 // import AppUseTransition from "@/AppUseTransition.tsx";
 // import AppUseDeferredValue from "@/AppUseDeferredValue.tsx";
-import AppUseEffect from "@/AppUseEffect.tsx";
+// import AppUseEffect from "@/AppUseEffect.tsx";
+import AppUseLayoutEffect from "@/AppUseLayoutEffect.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppMyHooks />*/}
     {/*<AppUseTransition />*/}
     {/*<AppUseDeferredValue />*/}
-    <AppUseEffect />
+    {/*<AppUseEffect />*/}
+    <AppUseLayoutEffect />
   </StrictMode>,
 );
