@@ -54,7 +54,9 @@ function App() {
       <div>
         {/*vue3 v-for的效果*/}
         {data.map((item) => (
-          <h1>{item}</h1>
+          <h1 key={item} id={item}>
+            {item}
+          </h1>
         ))}
       </div>
     </>
