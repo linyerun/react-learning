@@ -9,7 +9,8 @@ import "./index.css";
 // import AppUseDeferredValue from "@/AppUseDeferredValue.tsx";
 // import AppUseEffect from "@/AppUseEffect.tsx";
 // import AppUseLayoutEffect from "@/AppUseLayoutEffect.tsx";
-import AppUseRef from "@/AppUseRef.tsx";
+// import AppUseRef from "@/AppUseRef.tsx";
+import AppUseImperativeHandle from "@/AppUseImperativeHandle.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppUseDeferredValue />*/}
     {/*<AppUseEffect />*/}
     {/*<AppUseLayoutEffect />*/}
-    <AppUseRef />
+    {/*<AppUseRef />*/}
+    <AppUseImperativeHandle />
   </StrictMode>,
 );
