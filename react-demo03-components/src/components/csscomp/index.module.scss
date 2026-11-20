@@ -1,0 +1,8 @@
+.button-red {
+  color: red;
+}
+
+// 维持类名: 不希望被编译成css modules
+:global(.button){
+  color: blue;
+}

@@ -10,4 +10,10 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  css: {
+    modules: {
+      localsConvention: "dashes", // 修改css modules的类名规则 可以改成驼峰命名 或者 xxx-xxx命名等
+      generateScopedName: "[name][lyr][hash:base64:5]", // 修改css modules的类名规则
+    },
+  },
 });

@@ -6,7 +6,8 @@ import "./index.css";
 // import AppControlOrNot from "@/AppControlOrNot.tsx";
 // import Modal from "@/components/modal";
 // import AppAsync from "@/AppAsync.tsx";
-import AppSuperUsage from "@/AppSuperUsage.tsx";
+// import AppSuperUsage from "@/AppSuperUsage.tsx";
+import CssComp from "@/components/csscomp";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppControlOrNot />*/}
     {/*<Modal />*/}
     {/*<AppAsync />*/}
-    <AppSuperUsage />
+    {/*<AppSuperUsage />*/}
+    <CssComp />
   </StrictMode>,
 );
