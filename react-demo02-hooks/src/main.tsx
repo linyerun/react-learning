@@ -12,7 +12,8 @@ import "./index.css";
 // import AppUseRef from "@/AppUseRef.tsx";
 // import AppUseImperativeHandle from "@/AppUseImperativeHandle.tsx";
 // import AppUseContext from "@/AppUseContext.tsx";
-import AppUseMemo from "@/AppUseMemo.tsx";
+// import AppUseMemo from "@/AppUseMemo.tsx";
+import AppUseCallback from "@/AppUseCallback.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -27,6 +28,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppUseRef />*/}
     {/*<AppUseImperativeHandle />*/}
     {/*<AppUseContext />*/}
-    <AppUseMemo />
+    {/*<AppUseMemo />*/}
+    <AppUseCallback />
   </StrictMode>,
 );
