@@ -14,7 +14,8 @@ import "./index.css";
 // import AppUseContext from "@/AppUseContext.tsx";
 // import AppUseMemo from "@/AppUseMemo.tsx";
 // import AppUseCallback from "@/AppUseCallback.tsx";
-import AppUseDebugValue from "@/AppUseDebugValue.tsx";
+// import AppUseDebugValue from "@/AppUseDebugValue.tsx";
+import AppUseId from "@/AppUseId.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -31,6 +32,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppUseContext />*/}
     {/*<AppUseMemo />*/}
     {/*<AppUseCallback />*/}
-    <AppUseDebugValue />
+    {/*<AppUseDebugValue />*/}
+    <AppUseId />
   </StrictMode>,
 );
