@@ -15,7 +15,8 @@ import "./index.css";
 // import AppUseMemo from "@/AppUseMemo.tsx";
 // import AppUseCallback from "@/AppUseCallback.tsx";
 // import AppUseDebugValue from "@/AppUseDebugValue.tsx";
-import AppUseId from "@/AppUseId.tsx";
+// import AppUseId from "@/AppUseId.tsx";
+import AppUseWatermarkHook from "@/AppUseWatermarkHook.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -33,6 +34,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppUseMemo />*/}
     {/*<AppUseCallback />*/}
     {/*<AppUseDebugValue />*/}
-    <AppUseId />
+    {/*<AppUseId />*/}
+    <AppUseWatermarkHook />
   </StrictMode>,
 );
