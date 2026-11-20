@@ -10,7 +10,8 @@ import "./index.css";
 // import AppUseEffect from "@/AppUseEffect.tsx";
 // import AppUseLayoutEffect from "@/AppUseLayoutEffect.tsx";
 // import AppUseRef from "@/AppUseRef.tsx";
-import AppUseImperativeHandle from "@/AppUseImperativeHandle.tsx";
+// import AppUseImperativeHandle from "@/AppUseImperativeHandle.tsx";
+import AppUseContext from "@/AppUseContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById("root")!).render(
     {/*<AppUseEffect />*/}
     {/*<AppUseLayoutEffect />*/}
     {/*<AppUseRef />*/}
-    <AppUseImperativeHandle />
+    {/*<AppUseImperativeHandle />*/}
+    <AppUseContext />
   </StrictMode>,
 );
