@@ -1,5 +1,5 @@
 import "../index.css";
-import useUserStore from "../../store/user";
+import useUserStore from "@/store/user";
 import { useShallow } from "zustand/react/shallow";
 export default function Right() {
   console.log("B组件渲染");
@@ -13,6 +13,12 @@ export default function Right() {
       rap: state.hobby.rap,
       name: state.name,
     })),
+  );
+  useUserStore.subscribe(
+    (state) => state.hobby.rap,
+    (rap, prevRap) => {
+      console.log(`[B组件]rap: ${rap}, prev: ${prevRap}`);
+    },
   );
   return (
     <div className="right">

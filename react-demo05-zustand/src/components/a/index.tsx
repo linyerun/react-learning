@@ -1,8 +1,20 @@
 import "../index.css";
-import useUserStore from "../../store/user";
+import useUserStore from "@/store/user";
+import { useEffect } from "react";
 export default function Left() {
   console.log("A组件渲染");
   const { name, age, hobby, setHobbyRap, setHobbyBasketball } = useUserStore();
+  useEffect(() => {
+    const unsubscribe = useUserStore.subscribe(
+      (state) => [state.hobby.basketball, state.hobby.rap],
+      (curr, prev) => {
+        console.log(`[A组件]curr=${curr}, prevr=${prev}`);
+      },
+    );
+    return () => {
+      unsubscribe();
+    };
+  });
   return (
     <div className="left">
       <h1>A组件</h1>
