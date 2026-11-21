@@ -16,4 +16,22 @@ export default defineConfig({
       generateScopedName: "[name][lyr][hash:base64:5]", // 修改css modules的类名规则
     },
   },
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: "react-vendor",
+              test: /node_modules[\\/](react|react-dom|react-router|scheduler)[\\/]/,
+            },
+            {
+              name: "antd",
+              test: /node_modules[\\/](antd|@ant-design|rc-[^\\/]+)[\\/]/,
+            },
+          ],
+        },
+      },
+    },
+  },
 });
