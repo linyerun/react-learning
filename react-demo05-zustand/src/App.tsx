@@ -1,15 +1,20 @@
-import { useState } from 'react';
-import { Button, Flex, Typography } from 'antd';
-
+import usePriceStore from "./store/price";
+import { useEffect } from "react";
 export default function App() {
-  const [count, setCount] = useState(0);
-
+  //直接解构使用即可 把他当做一个hook使用
+  const { price, name, incPrice, decPrice, resetPrice, getPrice } =
+    usePriceStore();
+  useEffect(() => {
+    console.log("App被渲染了");
+  });
   return (
-    <Flex vertical align="center" gap={16} style={{ paddingTop: 80 }}>
-      <Typography.Title level={3}>react-demo05-zustand</Typography.Title>
-      <Button type="primary" onClick={() => setCount((c) => c + 1)}>
-        antd 依赖可用，点击次数：{count}
-      </Button>
-    </Flex>
+    <div>
+      <p>名称: {name}</p>
+      <p>价格: {price}</p>
+      <button onClick={incPrice}>增加</button>
+      <button onClick={decPrice}>减少</button>
+      <button onClick={resetPrice}>重置</button>
+      <button onClick={() => console.log(getPrice())}>获取</button>
+    </div>
   );
 }
