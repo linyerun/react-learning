@@ -18,7 +18,7 @@ passive（useEffect(异步)）
  *
  * 入参
  *    1.回调函数:Function：返回需要缓存的值
- *    2.依赖项:Array：依赖项发生变化时，回调函数会重新执行(执行时机跟useEffect类似)
+ *    2.依赖项:Array：依赖项发生变化时，回调函数会重新执行(useMemo 的依赖变化触发规则类似 useEffect 的依赖数组，但执行时机不同：useMemo 在 render 阶段同步计算，useEffect 在 commit 后的 passive 阶段异步执行)
  *      - 如果依赖项是个空数组，那么 useMemo 的回调函数只会执行一次
  * 返回值
  *    1.返回需要缓存的值(返回之后就不是函数了)
